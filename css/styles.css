@@ -299,3 +299,33 @@ header {
 .line_yellow {
 	border-bottom: 3px solid #feb960; 
 }
+
+.awesome-block {	
+	padding: 140px 0;
+	text-align: center;
+}
+.awesome-block h3 {
+	font-size: 30px;
+	color: #fff;
+	margin-bottom: 30px;
+}
+.awesome-block p {
+	font-size: 15px;
+	color: #fff;
+	margin-bottom: 150px;
+}
+.button_play {
+	margin: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
