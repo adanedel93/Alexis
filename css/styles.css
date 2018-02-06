@@ -184,6 +184,7 @@ header {
 	content:"01";
 	line-height: 1;
 	color: rgba(224,224,224,0.3);
+	font-family: 'Poppins', serif;
 	font-weight: 800;
 	font-size: 273px;
 	position: absolute;
@@ -227,13 +228,13 @@ header {
 	content: "02";
 	line-height: 1;
 	color: rgba(224,224,224,0.3);
+	font-family: 'Poppins', serif;
 	font-weight: 800;
 	font-size: 273px;
 	position:absolute;
 	top: -30px;
-	left: 0;
-	bottom: 0;
-	right: 0;
+	left: auto;
+	transform: translateX(-50%);
 	margin: auto;	
 }
 
@@ -284,4 +285,17 @@ header {
 }
 .focus-article .icon.app {
 	background-position: -180px 0;
+}
+
+.line_orange {
+	border-bottom: 3px solid #fc5f45; 
+}
+.line_green	{
+	border-bottom: 3px solid #38c695; 
+}
+.line_violet {
+	border-bottom: 3px solid #b27cf5; 
+}
+.line_yellow {
+	border-bottom: 3px solid #feb960; 
 }
