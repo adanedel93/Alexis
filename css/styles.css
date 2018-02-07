@@ -223,11 +223,18 @@ header {
 	margin-bottom: 70px;
 }
 
-.focus-block .content-wrapper .inner-wrapper {position:relative;}	
-.focus-block .content-wrapper:before {
-	content: "02";
-	line-height: 1;
+
+.focus-block .inner-wrapper {position:relative;}
+
+.numbered-block {
+	position: relative;
+	padding: 140px 0 150px;
+}
+
+.numbered-block:before {
+	content: attr(data-number);
 	color: rgba(224,224,224,0.3);
+	line-height: 1;
 	font-family: 'Poppins', serif;
 	font-weight: 800;
 	font-size: 273px;
@@ -238,6 +245,7 @@ header {
 	margin: auto;	
 }
 
+
 .focus-list {
 	font-size: 0;
 	text-align: center;
@@ -247,6 +255,8 @@ header {
 .focus-list li {
 	display: inline-block;
 	background-color: #fff;
+	box-shadow: 0 0 20px 0 rgba(0,0,0,0.05);
+	border-bottom: 3px solid transparent;
 	margin-right:30px;
 	position:relative;
 	height: 350px;
@@ -254,15 +264,25 @@ header {
 	vertical-align: top;
 }
 .focus-list li:last-child {margin-right:0;}
+.focus-list li:nth-child(1) {border-color: #fc5f45;}
+.focus-list li:nth-child(2) {border-color: #38c695;}
+.focus-list li:nth-child(3) {border-color: #b27cf5;}
+.focus-list li:nth-child(4) {border-color: #feb960;}
+
+.focus-article .article-title {
+	position: relative;
+	padding-top: 75px;
+	margin-bottom: 25px;
+}
 
 .focus-article {
 	position: relative;
 	padding: 65px 30px 0;
-	margin-top: 65px;
 }
 
 .focus-article h3 {
-	margin-bottom: 30px;
+	color: #313131;
+	font: 500 20px/1 'Poppins', sans-serif;
 }
 
 .focus-article .icon {
@@ -286,40 +306,36 @@ header {
 .focus-article .icon.app {
 	background-position: -180px 0;
 }
-
+/*
 .line_orange {
-	border-bottom: 3px solid #fc5f45; 
+	border-color: #fc5f45; 
 }
 .line_green	{
-	border-bottom: 3px solid #38c695; 
+	border-color: #38c695; 
 }
 .line_violet {
-	border-bottom: 3px solid #b27cf5; 
+	border-color: #b27cf5; 
 }
 .line_yellow {
-	border-bottom: 3px solid #feb960; 
+	border-color: #feb960; 
 }
-
+*/
 .awesome-block {	
-	padding: 140px 0;
+	padding: 145px 0;
 	text-align: center;
 }
 .awesome-block h3 {
-	font-size: 30px;
+	font: 400 30px 'Poppins', sans-serif;
 	color: #fff;
 	margin-bottom: 30px;
 }
 .awesome-block p {
 	font-size: 15px;
-	color: #fff;
-	margin-bottom: 150px;
+	color: #fff; 
 }
-.button_play {
-	margin: 30px;
+.awesome-block .bth-holder {
+	margin-bottom: 40px;
 }
-
-
-
 
 
 
