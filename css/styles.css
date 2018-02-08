@@ -337,9 +337,31 @@ header {
 	margin-bottom: 40px;
 }
 
+.portfolio-block {
+	padding: 140px, 0;
+	text-align: center;
+	position: relative;
+}
+.portfolio-block h2 {
+	margin-bottom: 30px;
+}
+.portfolio-block p {
+	margin-bottom: 70px;
+}
+.portfolio-block .inner-wrapper {position:relative;}
 
+.floated-list {
+	margin: 0 -10px;
+}
 
-
+.floated-list li {
+	float: left;
+	padding: 0 10px 20px;
+	width: 33.33333%;
+}
+.floated-list img {
+	width: 100%; 
+}
 
 
 
