@@ -334,11 +334,11 @@ header {
 .awesome-block .bth-holder {
 	margin-bottom: 40px;
 }
-
+/**
 .floated-list {
 	margin: 0 -10px;
 }
-
+*/
 .floated-list li {
 	float: left;
 	padding: 0 10px 20px;
@@ -348,6 +348,89 @@ header {
 	width: 100%; 
 }
 
+.contact-list li {
+	border-bottom: 2px solid transparent;
+	width: 25%;
+}
+.contact-list .card-holder {
+	border-bottom: 2px solid transparent;
+}
+.contact-list li:nth-child(1) .card-holder {border-color: #fc5f45;}
+.contact-list li:nth-child(2) .card-holder {border-color: #38c695;}
+.contact-list li:nth-child(3) .card-holder {border-color: #b27cf5;}
+.contact-list li:nth-child(4) .card-holder {border-color: #feb960;}
+
+
+.contact-list .contact-info {
+	background-color: #fff;
+	padding: 16px 2px;
+	text-align: center;
+}
+
+
+.article-about {
+	text-align: left;
+	background-color: #fff;
+	box-shadow: 0 0 20px 0 rgba(0,0,0,0.05);
+	margin: 50px 0;
+	padding: 75px 100px;
+}
+
+.article-about h3 {
+	color: #272727;
+	margin-bottom: 30px;
+}
+
+.article-about .inner-content {font-size:0;}
+.article-about .description-part,
+.article-about .soc-part {
+	display: inline-block;
+	vertical-align: middle;
+}
+.article-about .description-part {
+	border-right: 2px solid #efefef;
+	max-width: 815px;
+	width: 100%;
+	padding-right: 175px;
+	position: relative;
+}
+.description-part .share-icon {
+	position: absolute;
+	top: 50%;
+	right: 30px;
+	transform: translateY(-50%);
+}
+.article-about .soc-part {
+	margin-left: 25px;	
+}
+.article-about .soc-part li {
+	margin-bottom: 15px;
+}
+.article-about .soc-part li:last-child {margin-bottom:0;}
+
+.article-about .soc-part a {
+	color: #616161;
+	font: 400 15px/1 'Poppins', sans-serif;
+	position: relative;
+}
+.article-about .soc-part .fab {
+	color: inherit;
+	position: absolute;
+	left: 0;
+	top: 0;	
+	font-size: inherit;
+	line-height: 1;
+}
+
+
+
+
+/**
+
+	background-color: #fff;
+	height: 350px;
+	margin-right:30px;
+
 .team-block li {
 	display: inline-block;
 	background-color: #fff;
@@ -356,7 +439,7 @@ header {
 	margin-right:30px;
 	position:relative;
 	height: 350px;
-	width: 262px;
+	width: 25%;
 	vertical-align: top;
 }
 .team-block li:last-child {margin-right:0;}
