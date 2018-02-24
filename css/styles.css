@@ -32,7 +32,6 @@ ul {
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
-	font-size: 0;
 }
 a {
 	display: inline-block;
@@ -537,6 +536,7 @@ header {
 	color: #fff;
 	position: relative;
 	box-shadow: 0 0 0 3px #fff, 0 0 0 6px #38c695;
+	margin: 6px 6px 40px;
 }
 
 .double-circle-block .price {
@@ -552,33 +552,66 @@ header {
 	width: 100%;
 	font-size: 13px;
 }
+.pricing-list > li {
+	width: 33.33333%;
+}
+.pricing-list .card-holder {
+	border-top: 3px solid transparent;
+	padding: 35px;
+	background-color: #fff;
+	box-shadow: 0 0 20px 0 rgba(0,0,0,0.05);
+}
+
+.pricing-list .card-holder.red {border-color: #fc5f45;}
+.pricing-list .card-holder.green {border-color: #38c695;}
+.pricing-list .card-holder.blue {border-color: #b27cf5;}
+
 .double-circle-block.green {
 	background-color: #38c695;
-	box-shadow: 0 0 0 0 4px #fff, 0 0 0 8px #38c695;
+	box-shadow: 0 0 0 3px #fff, 0 0 0 6px #38c695;
 }
 .double-circle-block.red {
 	background-color: #fc5f45;
-	box-shadow: 0 0 0 0 4px #fff, 0 0 0 8px #fc5f45;
+	box-shadow: 0 0 0 3px #fff, 0 0 0 6px #fc5f45;
 }
 .double-circle-block.blue {
 	background-color: #b27cf5;
-	box-shadow: 0 0 0 0 4px #fff, 0 0 0 8px #b27cf5;
+	box-shadow: 0 0 0 3px #fff, 0 0 0 6px #b27cf5;
 }
+/*
 .pricing-sheet .card-holder {
-	background-color: #fff;
+	background-color: #fff;fa-check
 	padding: 35px;
-}
+}*/
 .pricing-sheet {
 	margin-bottom: 40px;
+	text-align: center;
 }
 .pricing-sheet >li {
 	color: #616161;
 	font: 400 15px/1 'Poppins', serif;
 	margin-bottom: 25px;
+	float: none;
+	padding: 0;
+	width: 100%;
+}
+.pricing-sheet strong {
+	color: #272727;
+	font-size: inherit;
+	font-weight: 600;
+	line-height: 1;
+	min-width: 20px;
+}
+.pricing-sheet .fa-check {
+	color: #272727;
+	font-size: inherit;
+	line-height: 1;
+	margin-right: 8px;
 }
 
-
-
-
+.card-holder .package {
+	margin-bottom: 25px; 
+	font-weight: 600;
+}
 
 
