@@ -70,10 +70,22 @@ a {
 	text-align: center;
 	font-size: 16px;
 	font-weight: 600;
-	line-height: 50px;
+	/*line-height: 50px;*/
+	line-height: 1;
 	text-transform: uppercase;
 	color: #fff;
+	vertical-align: middle;
+	transition: all 0.5s ease;
 }
+.button:before {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+
+
 .button.red {
 	background-color: #fc5f45;
 }
@@ -578,13 +590,9 @@ header {
 	background-color: #b27cf5;
 	box-shadow: 0 0 0 3px #fff, 0 0 0 6px #b27cf5;
 }
-/*
-.pricing-sheet .card-holder {
-	background-color: #fff;fa-check
-	padding: 35px;
-}*/
+
 .pricing-sheet {
-	margin-bottom: 40px;
+	margin-bottom: 0px;
 	text-align: center;
 }
 .pricing-sheet >li {
@@ -613,5 +621,63 @@ header {
 	margin-bottom: 25px; 
 	font-weight: 600;
 }
+
+.subscribe-block {
+	text-align:center;
+	padding: 150px;
+}
+.subscribe-block h2 {
+	color: #272727;
+	font: 400 30px/1 'Poppins', serif;
+	margin-bottom: 50px;
+}
+
+.subscribe-block .input-holder {
+	max-width: 480px;
+	margin: 0 auto;
+	position: relative;
+	border-radius: 25px;
+	overflow: hidden;
+}
+.subscribe-block .input-holder input {
+	padding-right: 200px;
+	padding-left: 25px;
+	border-radius: 25px;
+	border: 2px solid #efefef;
+	background-color: f7f7f7;
+	height: 50px;
+}
+.subscribe-block .input-holder input[type="email"]:focus {
+	outline: none;
+}
+.subscribe-block .input-holder button[type="submit"] {
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 100%;
+	width: 180px;
+	background: #fc5f45;
+	color: #fff;
+	font: 600 16px/50px 'Poppins', serif;
+	border: none;
+	text-transform: uppercase;
+	transition: all 0.3s ease;
+	cursor: pointer;
+}
+.subscribe-block .input-holder button[type="submit"]:hover {
+	background: #fff;
+	color:#fc5f45;
+	border: 2px solid #fc5f45;
+	border-radius: 25px;	
+}
+
+
+
+
+
+
+
+
+
 
 
