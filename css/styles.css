@@ -57,7 +57,8 @@ a {
 .dark-background {
 	background: #3f4049;
 }
-.gray-background{
+
+.gray-background {
 	background: #f7f7f7;
 }
 
@@ -621,6 +622,72 @@ header {
 	margin-bottom: 25px; 
 	font-weight: 600;
 }
+.testimonials-block .inner-content {
+	position: relative;
+	text-align: left;
+}
+.testimonials-block .quote {
+	position: absolute;
+	background: #fff;
+	right: 0;
+	top: 50%;
+	transform: translate(0, -50%);
+	max-width: 765px;
+	padding: 40px 65px;
+	border-bottom: 3px solid #fc5f45;
+}
+.quote:before {
+	content:"“";
+	line-height: 1;
+	color: rgba(224,224,224,0.3);
+	font-family: 'Libre Baskerville', serif;
+	font-weight: 800;
+	font-size: 337.59px;
+	position: absolute;
+	left: 25px;
+	top: -5px;
+}
+.quote .inner-wrapper {position: relative;}
+
+.testimonials-block img {
+	border: 10px solid rgba(0, 0, 0, 0.2);
+	z-index: 2;
+	position: relative;
+}
+.testimonials-block .title-block p, 
+.testimonials-block .title-block h2 {
+	color: #fff;
+}
+
+.testimonials-block .quote p:first-child {
+	margin-bottom: 40px;
+}
+.testimonials-block .quote span {
+	font: 400 40px/1 'Sacramento', cursive;
+	margin-bottom: 25px;
+}
+.testimonials-block h3 {
+	margin: 10px 0;
+}
+.testimonials-block .red {
+	font-size: 13px;
+	color: #fc5f45;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .subscribe-block {
 	text-align:center;
@@ -668,10 +735,8 @@ header {
 	background: #fff;
 	color:#fc5f45;
 	border: 2px solid #fc5f45;
-	border-radius: 25px;	
+	border-radius: 0 25px 25px 0;
 }
-
-
 
 
 
