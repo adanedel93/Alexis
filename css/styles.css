@@ -1,5 +1,9 @@
 *{box-sizing: border-box;}
-html, body {height: auto;}
+html, body {
+	height: auto;
+	overflow-x: hidden;
+	width: 100%;
+}
 body {
 	font-family: 'Poppins', sans-serif;
 	font-weight: 400;
@@ -36,7 +40,12 @@ ul {
 a {
 	display: inline-block;
 	text-decoration: none;
-	}
+}
+img {
+	display: inline-block;
+	max-width: 100%;	
+}
+	
 
 .content-wrapper {
 	max-width: 1140px;
@@ -131,6 +140,17 @@ a {
 }
 header {
 	padding: 24px 0;
+}
+
+.burger {
+	float: right;
+	font-size: 24;
+	line-height: 1;
+	color: #272727;
+}
+.burger:before {
+	content: '\f0fc';
+	font-family: 'FontAwesome';
 }
 
 .welcome-block {
@@ -784,6 +804,59 @@ header {
 	border: 2px solid #fc5f45;
 	border-radius: 0 25px 25px 0;
 }
+
+/* 1200, 1024, 768(640) 320*/
+@media screen and (max-width:1140px) {
+	.about-article {
+		position: relative;
+		top: auto;
+		right: auto;
+		margin: 0 auto;
+		transform: none;
+		max-width: 100%;
+	}
+	.about-block img {
+		display: block;
+		margin: 0 auto;
+	}
+	.content-wrapper, 
+	header {
+		padding-left:15px;
+		padding-right:15px;
+	}
+}
+
+@media screen and (max-width:1024px) {
+	.head-menu ul {
+		position: absolute;
+		top: -100%;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		background: #fff;
+		z-index: 10;
+		padding: 100px;
+		transition: easy-in-out 0.2sa transform;
+	}
+	.head-menu ul.active,
+	.logo:hover + .head-menu ul {
+		transform: translateY(100%);
+	}
+	.head-menu li {
+		display: block;
+		text-align: center;
+		margin: 0 0 15px;
+	}
+	.burger {
+		display: block;
+	}
+}
+
+
+
+
+
+
 
 
 
