@@ -586,7 +586,6 @@ header {
 	width: 100%;
 	font-size: 13px;
 }
-
 .pricing-list > li {
 	width: 33.33333%;
 }
@@ -605,11 +604,11 @@ header {
 	background-color: #38c695;
 	box-shadow: 0 0 0 3px #fff, 0 0 0 6px #38c695;
 }
-.double-circle-block .red {
+.double-circle-block.red {
 	background-color: #fc5f45;
 	box-shadow: 0 0 0 3px #fff, 0 0 0 6px #fc5f45;
 }
-.double-circle-block .blue {
+.double-circle-block.blue {
 	background-color: #b27cf5;
 	box-shadow: 0 0 0 3px #fff, 0 0 0 6px #b27cf5;
 }
