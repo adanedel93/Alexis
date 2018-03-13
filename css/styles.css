@@ -552,15 +552,15 @@ header {
 	width: 100%;
 	font-size: 13px;
 }
-.double-circle-block.green {
+.double-circle-block .green {
 	background-color: #38c695;
 	box-shadow: 0 0 0 0 4px #fff, 0 0 0 8px #38c695;
 }
-.double-circle-block.red {
+.double-circle-block .red {
 	background-color: #fc5f45;
 	box-shadow: 0 0 0 0 4px #fff, 0 0 0 8px #fc5f45;
 }
-.double-circle-block.blue {
+.double-circle-block .blue {
 	background-color: #b27cf5;
 	box-shadow: 0 0 0 0 4px #fff, 0 0 0 8px #b27cf5;
 }
