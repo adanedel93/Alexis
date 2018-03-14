@@ -143,6 +143,7 @@ header {
 }
 
 .burger {
+	display:none;
 	float: right;
 	font-size: 24;
 	line-height: 1;
@@ -825,6 +826,18 @@ header {
 		padding-left:15px;
 		padding-right:15px;
 	}
+	.article-about .description-part {
+		padding: 0;
+		border: none;
+	}
+	.description-part .share-icon {display: none;}
+	.article-about .soc-part {
+		text-align: center;
+		display: block;
+		margin: 20px;
+	}
+	.article-about .soc-part li {display: inline-block; margin-right: 10px;}
+	
 }
 
 @media screen and (max-width:1024px) {
