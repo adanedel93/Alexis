@@ -1,6 +1,6 @@
 *{box-sizing: border-box;}
 html, body {
-	height: auto;
+	height: 100vh;
 	overflow-x: hidden;
 	width: 100%;
 }
@@ -149,8 +149,9 @@ header {
 	color: #272727;
 }
 .burger:before {
-	content: '\f0fc';
-	font-family: 'FontAwesome';
+	content: '\f0c9';
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
 }
 
 .welcome-block {
@@ -836,10 +837,10 @@ header {
 		background: #fff;
 		z-index: 10;
 		padding: 100px;
-		transition: easy-in-out 0.2sa transform;
+		transition: ease-in-out 0.2sa transform;
 	}
 	.head-menu ul.active,
-	.logo:hover + .head-menu ul {
+	.burger:hover + .head-menu ul {
 		transform: translateY(100%);
 	}
 	.head-menu li {
