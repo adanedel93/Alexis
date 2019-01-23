@@ -17,7 +17,6 @@ h1 {
 h2 {
 	color: #313131;
 	font: 700 50px/1 'Libre Baskerville', serif;
-	line-height:1;
 	margin:0;
 }
 h3 {
@@ -284,7 +283,7 @@ header {
 	font-weight: 800;
 	font-size: 273px;
 	position:absolute;
-	top: -30px;
+	top: -20px;
 	left: auto;
 	transform: translateX(-50%);
 	margin: auto;	
@@ -368,11 +367,7 @@ header {
 .awesome-block .bth-holder {
 	margin-bottom: 40px;
 }
-/*
-.floated-list {
-	margin: 0 -10px;
-}
-*/
+
 .floated-list li {
 	float: left;
 	padding: 0 10px 20px;
@@ -468,7 +463,6 @@ header {
 .features-block li {
 	float: left;
 	padding: 0 15px;
-	text-align:center;
 	text-align: center;
 	width: 25%;
 }
@@ -701,12 +695,15 @@ header {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	align-items: flex-start;
+	justify-content: space-between;
+	align-content: space-between;
 }
 .select-block .flex-item {
 	text-align: left;
-	flex-basis: 320px;
+/*	flex-basis: 320px;*/
 	margin-bottom: 70px;
+	flex-basis: 33.333%;
+	padding:15px;
 }
 
 .select-block .flex-item h3 {
@@ -756,13 +753,11 @@ header {
 
 
 
-
-
 .subscribe-block {
-	text-align:center;
-	padding: 150px;
+	padding: 150px 0;
 }
-.subscribe-block h2 {
+.subscribe-block h2 {	
+	text-align:center;
 	color: #272727;
 	font: 400 30px/1 'Poppins', serif;
 	margin-bottom: 50px;
@@ -780,7 +775,7 @@ header {
 	padding-left: 25px;
 	border-radius: 25px;
 	border: 2px solid #efefef;
-	background-color: f7f7f7;
+	background-color: #f7f7f7;
 	height: 50px;
 }
 .subscribe-block .input-holder input[type="email"]:focus {
@@ -796,8 +791,9 @@ header {
 	color: #fff;
 	font: 600 16px/50px 'Poppins', serif;
 	border: none;
+	border-radius: 0 25px 25px 0;
 	text-transform: uppercase;
-	transition: all 0.3s ease;
+	transition: all 0.5s ease;
 	cursor: pointer;
 }
 .subscribe-block .input-holder button[type="submit"]:hover {
@@ -805,6 +801,20 @@ header {
 	color:#fc5f45;
 	border: 2px solid #fc5f45;
 	border-radius: 0 25px 25px 0;
+}
+
+.GetInTouch-block {
+	background: #cccccc;
+}
+.GetInTouch-block input {
+	display: inline-block;
+	width: 50%;
+	height: 50px;
+}
+
+.GetInTouch-block button{
+	outline: none;
+	cursor: pointer;
 }
 
 /* 1200, 1024, 768(640) 320*/
