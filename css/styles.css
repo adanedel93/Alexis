@@ -695,8 +695,6 @@ header {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	justify-content: space-between;
-	align-content: space-between;
 }
 .select-block .flex-item {
 	text-align: left;
@@ -754,15 +752,14 @@ header {
 	display: flex;
 	justify-content: space-between;
 	margin: 0 -15px;
+	max-height: 800px;
 }
 .blog-block .flex-item {
 	flex-basis: 555px;
 	text-align: left;
 	margin: 0 15px;
 }
-.blog-block .flex-item:first-child {
-	flex-shrink: 2;
-}
+
 .blog-block .atop-pic {
 	position: absolute;
 	transform: translateY(-75px);
