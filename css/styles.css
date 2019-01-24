@@ -750,6 +750,89 @@ header {
 }
 
 
+.blog-block .flex-container {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 -15px;
+}
+.blog-block .flex-item {
+	flex-basis: 555px;
+	text-align: left;
+	margin: 0 15px;
+}
+.blog-block .flex-item:first-child {
+	flex-shrink: 2;
+}
+.blog-block .atop-pic {
+	position: absolute;
+	transform: translateY(-75px);
+}
+.blog-block .under-picture .atop-pic p2 {
+	color: rgba(225,225,225,0.7);
+}
+.blog-block .flex-item h3 {
+	font: 600 18px/35.5px 'Poppins', serif;
+	margin-bottom: 10px;
+	color: #272727;
+}
+.blog-block .flex-item p1 {
+	font: 500 15px/1 'Poppins', serif;
+	text-transform: uppercase;
+	margin-right: 20px;
+}
+.blog-block .flex-item p2 {
+	font: 400 13px/30.5px 'Poppins', serif;
+	color: #616161;
+}
+.blog-block .flex-item p {
+	display: inline-block;
+	}
+.blog-block img {
+	display: block;
+}
+.blog-block .under-picture {
+	height: auto;
+	background-color: #fff;
+	padding: 30px 50px;
+	border-bottom: 3px solid transparent;
+}
+.blog-block .deep-flex-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.blog-block .deep-flex-item {
+	border-bottom: 3px solid transparent;
+	margin-bottom: 20px;
+	padding: 20px 30px;
+	background-color: #fff;	
+}
+.blog-block .deep-flex-item:last-child {
+	margin-bottom: 0px;
+}
+.blog-block .red {
+	border-color: #fc5f45;
+	color: #fc5f45;
+}
+.blog-block .blue {
+	border-color: #b27cf5;
+	color: #b27cf5;
+}
+.blog-block .green {
+	border-color: #38c695;
+	color: #38c695;
+}
+.blog-block .yellow {
+	border-color: #feb960;
+	color: #feb960;
+}
+
+
+
+
+
+
+
 
 
 
