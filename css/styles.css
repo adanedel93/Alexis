@@ -952,6 +952,11 @@ header {
 .GetInTouch-block .addresses .green {color:#38c695;}
 .GetInTouch-block .addresses .blue {color:#b27cf5;}
 .GetInTouch-block .addresses .yellow {color:#feb960;}
+.GetInTouch-block .lines {
+	background: url(../img/lines.png) no-repeat center center;
+	background-size: cover;
+	height:3px;
+}
 
 /* 1200, 1024, 768(640) 320*/
 @media screen and (max-width:1140px) {
