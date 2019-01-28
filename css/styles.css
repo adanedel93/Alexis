@@ -981,24 +981,20 @@ header {
 	.article-about .description-part {
 		padding: 0;
 		border: none;
+		max-width: 100%; 
 	}
 	.description-part .share-icon {display: none;}
 	.article-about .soc-part {
 		text-align: center;
-		display: block;
-		margin: 20px;
-	}
-	.article-about .soc-part li {display: inline-block; margin-right: 10px;}
-	.work-steps .absolute-block {
-		position:relative;
-		margin: 0 auto;
-		top: 0px;
-		height: 100%;
-		max-width: 556px;
+		margin: 20px 0 0;
 		width: 100%;
 	}
+	.article-about .soc-part li,
+	.article-about .soc-part li:last-child	{
+		display: inline-block; 
+		margin: 0 10px 0;
+		}
 }
-
 @media screen and (max-width:1024px) {
 	.head-menu ul {
 		position: absolute;
@@ -1023,13 +1019,16 @@ header {
 	.burger {
 		display: block;
 	}
+	.work-steps .absolute-block {
+		position:static;
+		margin: 0 auto;
+		top: 0px;
+		height: 100%;
+		max-width: 556px;
+		width: 100%;
+	}
 }
-
 @media screen and (max-width:640px) {
-	.row-step .inner-holder{
-		padding: 10px;
-	}
-	.row-step .inner-holder:before {
-		display: none;
-	}
+	.row-step .inner-holder {padding: 10px;}
+	.row-step .inner-holder:before {display: none;}
 }
